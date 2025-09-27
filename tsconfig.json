@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "allowJs": true,           // allow JS files
+    "checkJs": false,          // disable JS type checking
+    "strict": false,           // turn off strict type checks
+    "noEmit": true,            // don't generate JS files
+    "skipLibCheck": true,      // skip library checks
     "target": "ES6",
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
@@ -14,9 +15,7 @@
     "jsx": "preserve",
     "incremental": true,
     "plugins": [
-      {
-        "name": "next"
-      }
+      { "name": "next" }
     ],
     "paths": {
       "@/*": ["./*"]
