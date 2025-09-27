@@ -45,7 +45,7 @@ export default function TandemExchangeLanding() {
             Get hired sooner.
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Language learning is hard—especially when you're juggling work, applications, and life in Germany. Connect
+            Language learning is hard, especially when you're juggling work, applications, and life in Germany. Connect
             with native speakers for real conversations that prepare you for interviews, workplace collaboration, and
             career success.
           </p>
@@ -208,7 +208,7 @@ export default function TandemExchangeLanding() {
               {
                 step: "4",
                 title: "Earn & spend credits",
-                desc: "Teach to earn, spend to learn—match with anyone, anytime",
+                desc: "Teach to earn, spend to learn, match with anyone, anytime",
               },
             ].map((step, index) => (
               <div key={index} className="text-center">
@@ -331,7 +331,7 @@ export default function TandemExchangeLanding() {
               },
               {
                 q: "Is this tutoring?",
-                a: "It's peer-to-peer practice with native speakers—practical, conversational, and affordable.",
+                a: "It's peer-to-peer practice with native speakers, practical, conversational, and affordable.",
               },
               {
                 q: "What if I'm shy or beginner (A1–A2)?",
@@ -339,7 +339,7 @@ export default function TandemExchangeLanding() {
               },
               {
                 q: "Does it work online and in-person?",
-                a: "Yes. Filter by location or meet online—whatever fits your life.",
+                a: "Yes. Filter by location or meet online, whatever fits your life.",
               },
             ].map((faq, index) => (
               <Card key={index} className="p-6">
