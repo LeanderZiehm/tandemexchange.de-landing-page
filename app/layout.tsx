@@ -12,8 +12,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "TandemExchange - Learn German Faster. Get Hired Sooner.",
   description:
-    "Connect with native speakers for fair, flexible German practice. Perfect for working professionals in Germany.",
-  generator: "v0.app",
+    "Connect with native speakers for fair, flexible German practice. Perfect for working professionals in Germany."
 }
 
 export default function RootLayout({
