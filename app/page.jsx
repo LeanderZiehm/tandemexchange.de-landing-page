@@ -1,7 +1,16 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { CheckCircle, Users, Clock, Target, Star, ArrowRight, MessageSquare, Trophy } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  CheckCircle,
+  Users,
+  Clock,
+  Target,
+  Star,
+  ArrowRight,
+  MessageSquare,
+  Trophy,
+} from "lucide-react";
 
 export default function TandemExchangeLanding() {
   return (
@@ -14,49 +23,67 @@ export default function TandemExchangeLanding() {
             <span className="text-2xl font-bold">TandemExchange</span>
           </div>
           <nav className="hidden md:flex space-x-6">
-            <a href="#features" className="hover:text-secondary-foreground/80 transition-colors">
+            <a
+              href="#features"
+              className="hover:text-secondary-foreground/80 transition-colors"
+            >
               Features
             </a>
-            <a href="#how-it-works" className="hover:text-secondary-foreground/80 transition-colors">
+            <a
+              href="#how-it-works"
+              className="hover:text-secondary-foreground/80 transition-colors"
+            >
               How It Works
             </a>
-            <a href="#testimonials" className="hover:text-secondary-foreground/80 transition-colors">
-              Success Stories
-            </a>
-            <a href="#faq" className="hover:text-secondary-foreground/80 transition-colors">
+
+            <a
+              href="#faq"
+              className="hover:text-secondary-foreground/80 transition-colors"
+            >
               FAQ
             </a>
           </nav>
-          <Button variant="secondary" className="hidden md:inline-flex">
-            Sign In
-          </Button>
+       <a
+  href="https://app.tandemexchange.de"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button variant="secondary" className="hidden md:inline-flex">
+    Sign In
+  </Button>
+</a>
+
         </div>
       </header>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-secondary/10 via-primary/5 to-background py-20">
         <div className="container mx-auto px-4 text-center">
-          <Badge className="mb-6 bg-primary/10 text-primary border-primary/20">
-            🚀 Join 10,000+ professionals already learning
-          </Badge>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Learn German faster.
             <br />
             Get hired sooner.
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Language learning is hard, especially when you're juggling work, applications, and life in Germany. Connect
-            with native speakers for real conversations that prepare you for interviews, workplace collaboration, and
-            career success.
+            Language learning is hard, especially when you're juggling work,
+            applications, and life in Germany. Connect with native speakers for
+            real conversations that prepare you for interviews, workplace
+            collaboration, and career success.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
-              Start Free - Find a Partner
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-transparent">
-              Watch Demo
-            </Button>
+            <a
+              href="https://app.tandemexchange.de"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-lg px-8 py-6"
+              >
+                Start Free - Find a Partner
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </div>
           <div className="flex items-center justify-center space-x-8 text-sm text-muted-foreground">
             <div className="flex items-center">
@@ -81,20 +108,40 @@ export default function TandemExchangeLanding() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">The challenges you face</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Traditional learning methods don't prepare you for real German workplace communication
+              Traditional learning methods don't prepare you for real German
+              workplace communication
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: "Slow progress alone", desc: "Apps and drills don't prepare you for real conversations" },
-              { title: "High costs", desc: "Private lessons are expensive and not sustainable" },
-              { title: "Career pressure", desc: "B1/B2 German is often the difference between 'maybe' and 'yes'" },
-              { title: "No practice circle", desc: "You don't always know native speakers to practice with" },
+              {
+                title: "Slow progress alone",
+                desc: "Apps and drills don't prepare you for real conversations",
+              },
+              {
+                title: "High costs",
+                desc: "Private lessons are expensive and not sustainable",
+              },
+              {
+                title: "Career pressure",
+                desc: "B1/B2 German is often the difference between 'maybe' and 'yes'",
+              },
+              {
+                title: "No practice circle",
+                desc: "You don't always know native speakers to practice with",
+              },
             ].map((problem, index) => (
-              <Card key={index} className="p-6 border-l-4 border-l-destructive/50">
+              <Card
+                key={index}
+                className="p-6 border-l-4 border-l-destructive/50"
+              >
                 <CardContent className="p-0">
-                  <h3 className="font-semibold mb-2 text-destructive">{problem.title}</h3>
-                  <p className="text-sm text-muted-foreground">{problem.desc}</p>
+                  <h3 className="font-semibold mb-2 text-destructive">
+                    {problem.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    {problem.desc}
+                  </p>
                 </CardContent>
               </Card>
             ))}
@@ -106,9 +153,12 @@ export default function TandemExchangeLanding() {
       <section id="features" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">The TandemExchange solution</h2>
+            <h2 className="text-4xl font-bold mb-4">
+              The TandemExchange solution
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Connect with native speakers for fair, flexible practice that accelerates your German learning
+              Connect with native speakers for fair, flexible practice that
+              accelerates your German learning
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -135,8 +185,12 @@ export default function TandemExchangeLanding() {
               >
                 <CardContent className="p-0">
                   <div className="mb-6 flex justify-center">{feature.icon}</div>
-                  <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{feature.desc}</p>
+                  <h3 className="text-xl font-semibold mb-4">
+                    {feature.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {feature.desc}
+                  </p>
                 </CardContent>
               </Card>
             ))}
@@ -148,7 +202,9 @@ export default function TandemExchangeLanding() {
       <section className="py-16 bg-gradient-to-r from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Why it matters for your career in Germany</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              Why it matters for your career in Germany
+            </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -177,7 +233,9 @@ export default function TandemExchangeLanding() {
                 <CardContent className="p-0">
                   <div className="mb-4 flex justify-center">{benefit.icon}</div>
                   <h3 className="font-semibold mb-2">{benefit.title}</h3>
-                  <p className="text-sm text-muted-foreground">{benefit.desc}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {benefit.desc}
+                  </p>
                 </CardContent>
               </Card>
             ))}
@@ -190,7 +248,9 @@ export default function TandemExchangeLanding() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">How it works</h2>
-            <p className="text-xl text-muted-foreground">Get started in 4 simple steps</p>
+            <p className="text-xl text-muted-foreground">
+              Get started in 4 simple steps
+            </p>
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             {[
@@ -199,7 +259,11 @@ export default function TandemExchangeLanding() {
                 title: "Create your profile",
                 desc: "Native language, German level, goals (job hunt, everyday life), availability",
               },
-              { step: "2", title: "Find a partner", desc: "Search, filter, and send requests. They review and accept" },
+              {
+                step: "2",
+                title: "Find a partner",
+                desc: "Search, filter, and send requests. They review and accept",
+              },
               {
                 step: "3",
                 title: "Meet & swap",
@@ -221,10 +285,19 @@ export default function TandemExchangeLanding() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
-              Get your first session this week
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <a
+              href="https://app.tandemexchange.de"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-lg px-8 py-6"
+              >
+                Get your first session this week
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -233,7 +306,9 @@ export default function TandemExchangeLanding() {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Built for busy professionals</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              Built for busy professionals
+            </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -256,60 +331,10 @@ export default function TandemExchangeLanding() {
               <Card key={index} className="p-6">
                 <CardContent className="p-0">
                   <div className="mb-4">{feature.icon}</div>
-                  <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {feature.title}
+                  </h3>
                   <p className="text-muted-foreground">{feature.desc}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section id="testimonials" className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Success stories</h2>
-            <p className="text-xl text-muted-foreground">
-              See how TandemExchange helped professionals land their dream jobs
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Sarah M.",
-                role: "Software Engineer",
-                content:
-                  "TandemExchange helped me go from A2 to B2 in 6 months. I landed my dream job at a Berlin startup!",
-                rating: 5,
-              },
-              {
-                name: "Carlos R.",
-                role: "Marketing Manager",
-                content:
-                  "The job-focused conversations were exactly what I needed. Now I confidently present to German clients.",
-                rating: 5,
-              },
-              {
-                name: "Priya K.",
-                role: "Data Scientist",
-                content:
-                  "The credit system is brilliant. I help others with English and get German practice in return. Win-win!",
-                rating: 5,
-              },
-            ].map((testimonial, index) => (
-              <Card key={index} className="p-6">
-                <CardContent className="p-0">
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground mb-4 italic">"{testimonial.content}"</p>
-                  <div>
-                    <p className="font-semibold">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -321,7 +346,9 @@ export default function TandemExchangeLanding() {
       <section id="faq" className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Frequently asked questions</h2>
+            <h2 className="text-3xl font-bold mb-4">
+              Frequently asked questions
+            </h2>
           </div>
           <div className="max-w-3xl mx-auto space-y-6">
             {[
@@ -356,17 +383,32 @@ export default function TandemExchangeLanding() {
       {/* Final CTA */}
       <section className="py-20 bg-gradient-to-r from-primary to-secondary text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-4">Ready to make German your career edge?</h2>
+          <h2 className="text-4xl font-bold mb-4">
+            Ready to make German your career edge?
+          </h2>
           <p className="text-xl mb-8 opacity-90">
-            Join thousands of professionals who've accelerated their German learning
+            Join thousands of professionals who've accelerated their German
+            learning
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
-              Join TandemExchange - Start Free
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <a
+              href="https://app.tandemexchange.de"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                variant="secondary"
+                className="text-lg px-8 py-6"
+              >
+                Join TandemExchange - Start Free
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </div>
-          <p className="mt-6 text-sm opacity-75">Find a partner. Speak more. Get hired.</p>
+          <p className="mt-6 text-sm opacity-75">
+            Find a partner. Speak more. Get hired.
+          </p>
         </div>
       </section>
 
@@ -379,44 +421,17 @@ export default function TandemExchangeLanding() {
                 <MessageSquare className="h-6 w-6" />
                 <span className="text-lg font-bold">TandemExchange</span>
               </div>
-              <p className="text-sm opacity-75">Learn German faster. Get hired sooner.</p>
+              <p className="text-sm opacity-75">
+                Learn German faster. Get hired sooner.
+              </p>
             </div>
-            <div>
-              <h4 className="font-semibold mb-4">Product</h4>
-              <ul className="space-y-2 text-sm opacity-75">
-                <li>
-                  <a href="#" className="hover:opacity-100">
-                    Features
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:opacity-100">
-                    Pricing
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:opacity-100">
-                    Success Stories
-                  </a>
-                </li>
-              </ul>
-            </div>
+
             <div>
               <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-sm opacity-75">
                 <li>
                   <a href="#" className="hover:opacity-100">
-                    Help Center
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:opacity-100">
-                    Contact Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:opacity-100">
-                    Community
+                    Contact
                   </a>
                 </li>
               </ul>
@@ -424,14 +439,10 @@ export default function TandemExchangeLanding() {
             <div>
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-sm opacity-75">
+                 
                 <li>
                   <a href="#" className="hover:opacity-100">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:opacity-100">
-                    Careers
+                    Impressum
                   </a>
                 </li>
                 <li>
@@ -442,11 +453,8 @@ export default function TandemExchangeLanding() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-background/20 mt-8 pt-8 text-center text-sm opacity-75">
-            <p>&copy; 2024 TandemExchange. All rights reserved.</p>
-          </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
